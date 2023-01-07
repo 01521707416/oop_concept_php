@@ -6,12 +6,12 @@ class Car
 {
     # Properties
 
-    private $color = '';
+    public $color = '';
 
-    function __construct($given_color)
-    {
-        $this->color = $given_color;
-    }
+    // function __construct($given_color)
+    // {
+    //     $this->color = $given_color;
+    // }
 
     // methods
     function forward()
@@ -53,3 +53,5 @@ class TeslaBd extends Tesla
 $teslabd = new TeslaBd('Blue');
 echo $teslabd->flying();
 echo $teslabd->forward();
+
+echo Car::backward();
